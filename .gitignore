@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+
+# Pytest cache
+.pytest_cache/
+
+# Test reports
+reports/*
+!reports/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Playwright artifacts
+test-results/
+playwright-report/
+*.trace
