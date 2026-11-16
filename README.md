@@ -166,3 +166,81 @@ GitHub Actions is configured to automatically execute the UI automation test sui
 **Core automation framework implemented.**
 
 Further improvements and advanced testing features may be added as the project evolves.
+
+## Project Screenshots
+
+### Application UI
+
+**Login Page**
+
+![Login Page](docs/screenshots/login_page.png)
+
+**Products Page**
+
+![Products Page](docs/screenshots/products_page.png)
+
+**Shopping Cart**
+
+![Shopping Cart](docs/screenshots/cart_page.png)
+
+### Automation Test Results
+
+**Pytest HTML Report**
+
+![Test Report](docs/screenshots/test_report.png)
+
+### Framework Implementation
+
+**Page Object Model**
+
+![Login Page Code](docs/screenshots/login_page_code.png)
+
+**UI Automation Tests**
+
+![UI Test Code](docs/screenshots/ui_test_code.png)
+
+**API Automation Tests**
+
+![API Test Code](docs/screenshots/api_test_code.png)
+
+**GitHub Actions CI/CD**
+
+![GitHub Actions](docs/screenshots/github_actions.png)## Project Screenshots
+
+### Application UI
+
+**Login Page**
+
+![Login Page](docs/screenshots/login_page.png)
+
+**Products Page**
+
+![Products Page](docs/screenshots/products_page.png)
+
+**Shopping Cart**
+
+![Shopping Cart](docs/screenshots/cart_page.png)
+
+### Automation Test Results
+
+**Pytest HTML Report**
+
+![Test Report](docs/screenshots/test_report.png)
+
+### Framework Implementation
+
+**Page Object Model**
+
+![Login Page Code](docs/screenshots/login_page_code.png)
+
+**UI Automation Tests**
+
+![UI Test Code](docs/screenshots/ui_test_code.png)
+
+**API Automation Tests**
+
+![API Test Code](docs/screenshots/api_test_code.png)
+
+**GitHub Actions CI/CD**
+
+![GitHub Actions](docs/screenshots/github_actions.png)
