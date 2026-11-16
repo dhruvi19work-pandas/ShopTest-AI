@@ -2,33 +2,37 @@
 
 ## E-Commerce Test Automation Framework
 
-A Python-based test automation framework built to validate e-commerce application functionality through UI automation and API testing.
+ShopTest-AI is a Python-based test automation framework designed to validate e-commerce application functionality through UI automation and API testing.
 
-The project demonstrates practical software testing skills, reusable automation architecture, test reporting, and continuous integration using GitHub Actions.
+This project demonstrates practical software testing skills, reusable automation architecture, test data management, reporting, and continuous integration using GitHub Actions.
 
 ## Technology Stack
 
-- **Language:** Python
-- **UI Automation:** Playwright
-- **Test Framework:** Pytest
-- **API Testing:** Requests
-- **Design Pattern:** Page Object Model (POM)
-- **Reporting:** Pytest HTML Reports
-- **Version Control:** Git and GitHub
-- **CI/CD:** GitHub Actions
+| Technology | Purpose |
+|---|---|
+| Python | Programming language |
+| Playwright | UI automation |
+| Pytest | Test framework |
+| Requests | API automation |
+| Page Object Model | Framework architecture |
+| Pytest HTML | Test reporting |
+| Git & GitHub | Version control |
+| GitHub Actions | CI/CD |
 
 ## Project Features
 
-- Automated UI testing using Playwright.
-- API testing using Python Requests.
-- Page Object Model architecture.
+- UI automation using Playwright.
+- API automation using Python Requests.
+- Page Object Model (POM) architecture.
 - Reusable Pytest fixtures.
 - Data-driven and parametrized testing.
 - Positive and negative test scenarios.
-- API response validation and response-time checks.
+- GET, POST, PUT, PATCH and DELETE API testing.
+- API response validation.
+- API response-time testing.
 - Automated HTML test reports.
 - Logging and failure screenshots.
-- Continuous test execution using GitHub Actions.
+- Continuous integration using GitHub Actions.
 
 ## Applications Under Test
 
@@ -63,10 +67,16 @@ ShopTest-AI/
 │   ├── api_helpers.py
 │   └── logger.py
 │
+├── docs/
+│   ├── screenshots/
+│   ├── test_scenarios.md
+│   ├── test_cases.md
+│   ├── edge_cases.md
+│   ├── risk_prioritization.md
+│   └── test_strategy.md
+│
 ├── reports/
 ├── logs/
-├── docs/
-│
 ├── conftest.py
 ├── pytest.ini
 ├── requirements.txt
@@ -82,7 +92,7 @@ ShopTest-AI/
 git clone https://github.com/dhruvi19work-pandas/ShopTest-AI.git
 ```
 
-### 2. Navigate to the project
+### 2. Navigate to the project directory
 
 ```bash
 cd ShopTest-AI
@@ -94,7 +104,7 @@ cd ShopTest-AI
 python -m venv .venv
 ```
 
-### 4. Activate the environment (Windows PowerShell)
+### 4. Activate the virtual environment (Windows PowerShell)
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
@@ -118,25 +128,25 @@ Create a `.env` file using `.env.example` as a reference.
 
 ## Running Tests
 
-**Run the complete test suite:**
+### Run all tests
 
 ```bash
 python -m pytest -v
 ```
 
-**Run UI tests:**
+### Run UI tests
 
 ```bash
 python -m pytest tests/ui/ -v
 ```
 
-**Run API tests:**
+### Run API tests
 
 ```bash
 python -m pytest tests/api/ -v
 ```
 
-**Generate an HTML report:**
+### Generate an HTML report
 
 ```bash
 python -m pytest -v --html=reports/full_report.html --self-contained-html
@@ -144,32 +154,25 @@ python -m pytest -v --html=reports/full_report.html --self-contained-html
 
 ## Test Execution Results
 
-The framework has successfully executed **29 automated tests** in the latest full test run.
+Latest recorded full test execution:
 
-- Passed: 29
-- Failed: 0
+| Result | Count |
+|---|---:|
+| Passed | 29 |
+| Failed | 0 |
+| Total | 29 |
 
 ## Continuous Integration
 
-GitHub Actions is configured to automatically execute the UI automation test suite on pushes and pull requests to the main branch.
+GitHub Actions is configured to run the UI automation test suite automatically on pushes and pull requests to the `main` branch.
 
-## Project Goals
+## Project Documentation
 
-- Strengthen practical UI and API automation skills.
-- Build reusable and maintainable test automation components.
-- Apply real-world software testing practices.
-- Understand test execution and reporting.
-- Gain hands-on experience with CI/CD pipelines.
-
-## Project Status
-
-**Core automation framework implemented.**
-
-Further improvements and advanced testing features may be added as the project evolves.
+The `docs/` folder contains test scenarios, test cases, edge cases, risk prioritization, and test strategy documentation.
 
 ## Project Screenshots
 
-### Application UI
+### 1. Application UI
 
 **Login Page**
 
@@ -183,64 +186,40 @@ Further improvements and advanced testing features may be added as the project e
 
 ![Shopping Cart](docs/screenshots/cart_page.png)
 
-### Automation Test Results
+### 2. Automation Test Results
 
 **Pytest HTML Report**
 
-![Test Report](docs/screenshots/test_report.png)
+![Pytest HTML Report](docs/screenshots/test_report.png)
 
-### Framework Implementation
-
-**Page Object Model**
-
-![Login Page Code](docs/screenshots/login_page_code.png)
-
-**UI Automation Tests**
-
-![UI Test Code](docs/screenshots/ui_test_code.png)
-
-**API Automation Tests**
-
-![API Test Code](docs/screenshots/api_test_code.png)
-
-**GitHub Actions CI/CD**
-
-![GitHub Actions](docs/screenshots/github_actions.png)## Project Screenshots
-
-### Application UI
-
-**Login Page**
-
-![Login Page](docs/screenshots/login_page.png)
-
-**Products Page**
-
-![Products Page](docs/screenshots/products_page.png)
-
-**Shopping Cart**
-
-![Shopping Cart](docs/screenshots/cart_page.png)
-
-### Automation Test Results
-
-**Pytest HTML Report**
-
-![Test Report](docs/screenshots/test_report.png)
-
-### Framework Implementation
+### 3. Framework Implementation
 
 **Page Object Model**
 
-![Login Page Code](docs/screenshots/login_page_code.png)
+![Page Object Model](docs/screenshots/login_page_code.png)
 
 **UI Automation Tests**
 
-![UI Test Code](docs/screenshots/ui_test_code.png)
+![UI Automation Tests](docs/screenshots/ui_test_code.png)
 
 **API Automation Tests**
 
-![API Test Code](docs/screenshots/api_test_code.png)
+![API Automation Tests](docs/screenshots/api_test_code.png)
 
 **GitHub Actions CI/CD**
 
 ![GitHub Actions](docs/screenshots/github_actions.png)
+
+## Project Goals
+
+- Develop practical UI and API automation skills.
+- Build reusable and maintainable automation frameworks.
+- Apply software testing principles and best practices.
+- Understand test reporting and failure analysis.
+- Gain hands-on experience with CI/CD pipelines.
+
+## Project Status
+
+**Core UI and API automation framework implemented.**
+
+This is my first end-to-end test automation project. Further improvements and advanced testing capabilities may be added as the project evolves.
